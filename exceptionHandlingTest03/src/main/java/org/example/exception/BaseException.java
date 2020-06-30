@@ -8,6 +8,7 @@ import org.example.constant.IResponseEnum;
  * @author YueZhiMing
  * @create 2020-06-30 16:33
  */
+@Getter
 public class BaseException  extends RuntimeException {
 
     private static final long serialVersionUID = 1L;

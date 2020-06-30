@@ -29,7 +29,7 @@ public enum CommonResponseEnum implements CommonExceptionAssert {
     SERVER_ERROR(9999, "网络异常"),
 
     /**
-     * 5***，一般对应于{@link com.sprainkle.spring.cloud.advance.common.core.exception.ArgumentException}，系统封装的工具出现异常
+     * 5***，一般对应于，系统封装的工具出现异常
      */
 
     // Time
