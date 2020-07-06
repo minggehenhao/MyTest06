@@ -1,5 +1,6 @@
 package org.example.exception;
 
+import lombok.Data;
 import org.example.service.BaseErrorInfoInterface;
 import org.example.service.IResponseEnum;
 
@@ -7,6 +8,7 @@ import org.example.service.IResponseEnum;
  * @author YueZhiMing
  * @create 2020-06-28 15:19
  */
+@Data
 public class BizException extends RuntimeException {
 
     private static final long serialVersionUID = 1L;
@@ -66,21 +68,6 @@ public class BizException extends RuntimeException {
 
 
 
-    public String getErrorCode() {
-        return errorCode;
-    }
-
-    public void setErrorCode(String errorCode) {
-        this.errorCode = errorCode;
-    }
-
-    public String getErrorMsg() {
-        return errorMsg;
-    }
-
-    public void setErrorMsg(String errorMsg) {
-        this.errorMsg = errorMsg;
-    }
 
     public String getMessage() {
         return errorMsg;

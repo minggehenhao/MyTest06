@@ -1,6 +1,7 @@
 package org.example.entry;
 
 import com.alibaba.fastjson.JSONObject;
+import lombok.Data;
 
 import java.io.Serializable;
 
@@ -8,6 +9,7 @@ import java.io.Serializable;
  * @author YueZhiMing
  * @create 2020-06-28 16:01
  */
+@Data
 public class User implements Serializable {
     private static final long serialVersionUID = 1L;
     /** 编号 */
@@ -18,30 +20,6 @@ public class User implements Serializable {
     private int age;
 
     public User(){
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
     @Override
